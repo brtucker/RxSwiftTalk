@@ -7,12 +7,24 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D8D68CCA1CBB54140024CF46 /* RxSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D8D68CC51CBB54140024CF46 /* RxSwift.framework */; };
+		D8D68CCB1CBB54140024CF46 /* RxSwift.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = D8D68CC51CBB54140024CF46 /* RxSwift.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		D8D68CCC1CBB54140024CF46 /* RxCocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D8D68CC61CBB54140024CF46 /* RxCocoa.framework */; };
+		D8D68CCD1CBB54140024CF46 /* RxCocoa.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = D8D68CC61CBB54140024CF46 /* RxCocoa.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		D8D68CCE1CBB54140024CF46 /* RxTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D8D68CC71CBB54140024CF46 /* RxTests.framework */; };
+		D8D68CCF1CBB54140024CF46 /* RxTests.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = D8D68CC71CBB54140024CF46 /* RxTests.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		D8D68CD01CBB54140024CF46 /* RxBlocking.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D8D68CC81CBB54140024CF46 /* RxBlocking.framework */; };
+		D8D68CD11CBB54140024CF46 /* RxBlocking.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = D8D68CC81CBB54140024CF46 /* RxBlocking.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		D8D68CD21CBB54140024CF46 /* CryptoSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D8D68CC91CBB54140024CF46 /* CryptoSwift.framework */; };
+		D8D68CD31CBB54140024CF46 /* CryptoSwift.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = D8D68CC91CBB54140024CF46 /* CryptoSwift.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		D8D68CD61CBB58C00024CF46 /* Wireframe.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8D68CD51CBB58C00024CF46 /* Wireframe.swift */; };
 		DEA54CBD1CB869EF00955930 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEA54CBC1CB869EF00955930 /* AppDelegate.swift */; };
 		DEA54CBF1CB869EF00955930 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEA54CBE1CB869EF00955930 /* ViewController.swift */; };
 		DEA54CC21CB869EF00955930 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DEA54CC01CB869EF00955930 /* Main.storyboard */; };
 		DEA54CC41CB869EF00955930 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DEA54CC31CB869EF00955930 /* Assets.xcassets */; };
 		DEA54CC71CB869EF00955930 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DEA54CC51CB869EF00955930 /* LaunchScreen.storyboard */; };
 		DEA54CD21CB869EF00955930 /* PetFinderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEA54CD11CB869EF00955930 /* PetFinderTests.swift */; };
+		DEA54CDE1CB872E000955930 /* PetFinderDogSearchAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEA54CDD1CB872E000955930 /* PetFinderDogSearchAPI.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -25,7 +37,31 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		D8D68CD41CBB54140024CF46 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				D8D68CCD1CBB54140024CF46 /* RxCocoa.framework in Embed Frameworks */,
+				D8D68CCF1CBB54140024CF46 /* RxTests.framework in Embed Frameworks */,
+				D8D68CCB1CBB54140024CF46 /* RxSwift.framework in Embed Frameworks */,
+				D8D68CD31CBB54140024CF46 /* CryptoSwift.framework in Embed Frameworks */,
+				D8D68CD11CBB54140024CF46 /* RxBlocking.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		D8D68CC51CBB54140024CF46 /* RxSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxSwift.framework; path = Carthage/Build/iOS/RxSwift.framework; sourceTree = "<group>"; };
+		D8D68CC61CBB54140024CF46 /* RxCocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxCocoa.framework; path = Carthage/Build/iOS/RxCocoa.framework; sourceTree = "<group>"; };
+		D8D68CC71CBB54140024CF46 /* RxTests.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxTests.framework; path = Carthage/Build/iOS/RxTests.framework; sourceTree = "<group>"; };
+		D8D68CC81CBB54140024CF46 /* RxBlocking.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxBlocking.framework; path = Carthage/Build/iOS/RxBlocking.framework; sourceTree = "<group>"; };
+		D8D68CC91CBB54140024CF46 /* CryptoSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CryptoSwift.framework; path = Carthage/Build/iOS/CryptoSwift.framework; sourceTree = "<group>"; };
+		D8D68CD51CBB58C00024CF46 /* Wireframe.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Wireframe.swift; sourceTree = "<group>"; };
 		DEA54CB91CB869EF00955930 /* PetFinder.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PetFinder.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DEA54CBC1CB869EF00955930 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DEA54CBE1CB869EF00955930 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -36,6 +72,7 @@
 		DEA54CCD1CB869EF00955930 /* PetFinderTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PetFinderTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		DEA54CD11CB869EF00955930 /* PetFinderTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PetFinderTests.swift; sourceTree = "<group>"; };
 		DEA54CD31CB869EF00955930 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DEA54CDD1CB872E000955930 /* PetFinderDogSearchAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PetFinderDogSearchAPI.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,6 +80,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D8D68CCC1CBB54140024CF46 /* RxCocoa.framework in Frameworks */,
+				D8D68CCE1CBB54140024CF46 /* RxTests.framework in Frameworks */,
+				D8D68CCA1CBB54140024CF46 /* RxSwift.framework in Frameworks */,
+				D8D68CD21CBB54140024CF46 /* CryptoSwift.framework in Frameworks */,
+				D8D68CD01CBB54140024CF46 /* RxBlocking.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -56,9 +98,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		D8D68CD71CBB58C30024CF46 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				D8D68CD51CBB58C00024CF46 /* Wireframe.swift */,
+			);
+			name = Services;
+			sourceTree = "<group>";
+		};
 		DEA54CB01CB869EF00955930 = {
 			isa = PBXGroup;
 			children = (
+				D8D68CC51CBB54140024CF46 /* RxSwift.framework */,
+				D8D68CC61CBB54140024CF46 /* RxCocoa.framework */,
+				D8D68CC71CBB54140024CF46 /* RxTests.framework */,
+				D8D68CC81CBB54140024CF46 /* RxBlocking.framework */,
+				D8D68CC91CBB54140024CF46 /* CryptoSwift.framework */,
 				DEA54CBB1CB869EF00955930 /* PetFinder */,
 				DEA54CD01CB869EF00955930 /* PetFinderTests */,
 				DEA54CBA1CB869EF00955930 /* Products */,
@@ -77,6 +132,8 @@
 		DEA54CBB1CB869EF00955930 /* PetFinder */ = {
 			isa = PBXGroup;
 			children = (
+				D8D68CD71CBB58C30024CF46 /* Services */,
+				DEA54CDC1CB872CE00955930 /* Networking */,
 				DEA54CBC1CB869EF00955930 /* AppDelegate.swift */,
 				DEA54CBE1CB869EF00955930 /* ViewController.swift */,
 				DEA54CC01CB869EF00955930 /* Main.storyboard */,
@@ -96,6 +153,14 @@
 			path = PetFinderTests;
 			sourceTree = "<group>";
 		};
+		DEA54CDC1CB872CE00955930 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				DEA54CDD1CB872E000955930 /* PetFinderDogSearchAPI.swift */,
+			);
+			name = Networking;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -106,6 +171,7 @@
 				DEA54CB51CB869EF00955930 /* Sources */,
 				DEA54CB61CB869EF00955930 /* Frameworks */,
 				DEA54CB71CB869EF00955930 /* Resources */,
+				D8D68CD41CBB54140024CF46 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -146,6 +212,7 @@
 				TargetAttributes = {
 					DEA54CB81CB869EF00955930 = {
 						CreatedOnToolsVersion = 7.2.1;
+						DevelopmentTeam = HY6N525HCU;
 					};
 					DEA54CCC1CB869EF00955930 = {
 						CreatedOnToolsVersion = 7.2.1;
@@ -197,8 +264,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D8D68CD61CBB58C00024CF46 /* Wireframe.swift in Sources */,
 				DEA54CBF1CB869EF00955930 /* ViewController.swift in Sources */,
 				DEA54CBD1CB869EF00955930 /* AppDelegate.swift in Sources */,
+				DEA54CDE1CB872E000955930 /* PetFinderDogSearchAPI.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -327,11 +396,18 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				ENABLE_BITCODE = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = PetFinder/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.tucker.PetFinder;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -339,11 +415,18 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				ENABLE_BITCODE = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = PetFinder/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.tucker.PetFinder;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};
@@ -390,6 +473,7 @@
 				DEA54CD81CB869EF00955930 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		DEA54CD91CB869EF00955930 /* Build configuration list for PBXNativeTarget "PetFinderTests" */ = {
 			isa = XCConfigurationList;
@@ -398,6 +482,7 @@
 				DEA54CDB1CB869EF00955930 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
